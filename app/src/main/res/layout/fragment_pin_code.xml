@@ -1,0 +1,341 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/side_nav_bar"
+    android:orientation="vertical"
+    android:weightSum="1">
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/background_light"
+        android:padding="2dp"
+        android:layout_gravity="bottom"
+        android:minHeight="0dp">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="fill_vertical|center_horizontal">
+
+            <Button
+                android:text="1"
+                android:id="@+id/num1"
+                android:layout_width="80dp"
+                android:layout_height="60dp"
+                android:layout_weight="1"
+                android:textSize="24sp"
+                android:background="@drawable/flat_button"
+                style="?android:attr/borderlessButtonStyle"
+                android:textColor="#777777"
+                android:layout_margin="1dp" />
+
+            <Button
+                android:text="2"
+                android:id="@+id/num2"
+                android:layout_width="80dp"
+                android:layout_height="60dp"
+                android:textSize="24sp"
+                android:layout_weight="1"
+                android:background="@drawable/flat_button"
+                style="?android:attr/borderlessButtonStyle"
+                android:textColor="#777777"
+                android:layout_margin="1dp" />
+
+            <Button
+                android:text="3"
+                android:id="@+id/num3"
+                android:layout_width="80dp"
+                android:layout_height="60dp"
+                android:textSize="24sp"
+                android:layout_weight="1"
+                android:background="@drawable/flat_button"
+                style="?android:attr/borderlessButtonStyle"
+                android:textColor="#777777"
+                android:layout_margin="1dp" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <Button
+                android:text="4"
+                android:id="@+id/num4"
+                android:layout_width="80dp"
+                android:layout_height="60dp"
+                android:textSize="24sp"
+                android:layout_weight="1"
+                android:background="@drawable/flat_button"
+                style="?android:attr/borderlessButtonStyle"
+                android:textColor="#777777"
+                android:layout_margin="1dp" />
+            <Button
+                android:text="5"
+                android:id="@+id/num5"
+                android:layout_width="80dp"
+                android:layout_height="60dp"
+                android:textSize="24sp"
+                android:layout_weight="1"
+                android:background="@drawable/flat_button"
+                style="?android:attr/borderlessButtonStyle"
+                android:textColor="#777777"
+                android:layout_margin="1dp" />
+            <Button
+                android:text="6"
+                android:id="@+id/num6"
+                android:layout_width="80dp"
+                android:layout_height="60dp"
+                android:textSize="24sp"
+                android:layout_weight="1"
+                android:background="@drawable/flat_button"
+                style="?android:attr/borderlessButtonStyle"
+                android:textColor="#777777"
+                android:layout_margin="1dp" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <Button
+                android:text="7"
+                android:id="@+id/num7"
+                android:layout_width="80dp"
+                android:layout_height="60dp"
+                android:textSize="24sp"
+                android:layout_weight="1"
+                android:background="@drawable/flat_button"
+                style="?android:attr/borderlessButtonStyle"
+                android:textColor="#777777"
+                android:layout_margin="1dp" />
+
+            <Button
+                android:text="8"
+                android:id="@+id/num8"
+                android:layout_width="80dp"
+                android:layout_height="60dp"
+                android:textSize="24sp"
+                android:layout_weight="1"
+                android:background="@drawable/flat_button"
+                style="?android:attr/borderlessButtonStyle"
+                android:textColor="#777777"
+                android:layout_margin="1dp" />
+
+            <Button
+                android:text="9"
+                android:id="@+id/num9"
+                android:layout_width="80dp"
+                android:layout_height="60dp"
+                android:textSize="24sp"
+                android:layout_weight="1"
+                android:background="@drawable/flat_button"
+                style="?android:attr/borderlessButtonStyle"
+                android:textColor="#777777"
+                android:layout_margin="1dp" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <Button
+                android:layout_width="80dp"
+                android:layout_height="60dp"
+                android:textSize="24sp"
+                android:layout_weight="1"
+                android:background="#eeeeee"
+                android:textColor="#777777"
+                android:enabled="false"
+                android:layout_margin="1dp" />
+
+            <Button
+                android:text="0"
+                android:id="@+id/num0"
+                android:layout_width="80dp"
+                android:layout_height="60dp"
+                android:textSize="24sp"
+                android:layout_weight="1"
+                android:background="@drawable/flat_button"
+                style="?android:attr/borderlessButtonStyle"
+                android:textColor="#777777"
+                android:layout_margin="1dp" />
+            <Button
+                android:text=""
+                android:id="@+id/deleteBtn"
+                android:layout_width="80dp"
+                android:layout_height="60dp"
+                android:textSize="24sp"
+                android:layout_weight="1"
+                android:background="@drawable/flat_button"
+                style="?android:attr/borderlessButtonStyle"
+                android:textColor="#777777"
+                android:layout_margin="1dp"
+                android:foreground="@drawable/ic_backspace_black_24dp"
+                android:foregroundTint="#777777"
+                android:foregroundGravity="center" />
+        </TableRow>
+    </TableLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginBottom="280dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="--"
+            android:ems="10"
+            android:id="@+id/emailBox"
+            android:textColor="@android:color/background_light"
+            android:textStyle="normal"
+            android:textAlignment="center"
+            android:clickable="false"
+            android:focusableInTouchMode="false"
+            android:focusable="false"
+            android:layout_weight="0.93"
+            android:textSize="18dp"
+            android:layout_margin="10dp" />
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="PINCODE"
+            android:ems="10"
+            android:textColor="@android:color/background_light"
+            android:textStyle="normal|bold"
+            android:textAlignment="center"
+            android:clickable="false"
+            android:focusableInTouchMode="false"
+            android:focusable="false"
+            android:layout_weight="0.93"
+            android:textSize="18dp"
+            android:layout_margin="10dp"
+            android:id="@+id/textView3" />
+
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center">
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center">
+
+                <FrameLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@android:color/background_light"
+                    android:padding="13dp"
+                    android:layout_margin="6dp">
+
+                    <CheckBox
+                        android:id="@+id/digit1"
+                        android:button="@drawable/password_item"
+                        android:background="@android:color/background_light"
+                        android:checked="false"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="start" />
+                </FrameLayout>
+
+                <FrameLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@android:color/background_light"
+                    android:padding="13dp"
+                    android:layout_margin="6dp">
+
+                    <CheckBox
+                        android:id="@+id/digit2"
+                        android:button="@drawable/password_item"
+                        android:background="@android:color/background_light"
+                        android:checked="false"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="start" />
+                </FrameLayout>
+
+                <FrameLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@android:color/background_light"
+                    android:padding="13dp"
+                    android:layout_margin="6dp">
+
+                    <CheckBox
+                        android:id="@+id/digit3"
+                        android:button="@drawable/password_item"
+                        android:background="@android:color/background_light"
+                        android:checked="false"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="start" />
+                </FrameLayout>
+
+                <FrameLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@android:color/background_light"
+                    android:padding="13dp"
+                    android:layout_margin="6dp">
+
+                    <CheckBox
+                        android:id="@+id/digit4"
+                        android:button="@drawable/password_item"
+                        android:background="@android:color/background_light"
+                        android:checked="false"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="start" />
+                </FrameLayout>
+
+                <FrameLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@android:color/background_light"
+                    android:padding="13dp"
+                    android:layout_margin="6dp">
+
+                    <CheckBox
+                        android:id="@+id/digit5"
+                        android:button="@drawable/password_item"
+                        android:background="@android:color/background_light"
+                        android:checked="false"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="start" />
+                </FrameLayout>
+
+            </TableRow>
+
+        </TableLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="error"
+            android:ems="10"
+            android:textColor="@android:color/background_light"
+            android:textStyle="normal"
+            android:textAlignment="center"
+            android:clickable="false"
+            android:focusableInTouchMode="false"
+            android:focusable="false"
+            android:layout_weight="0.93"
+            android:textSize="16dp"
+            android:layout_margin="10dp"
+            android:id="@+id/errorBox"
+            android:visibility="gone" />
+    </LinearLayout>
+
+</android.support.design.widget.CoordinatorLayout>
